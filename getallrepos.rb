@@ -2,7 +2,7 @@ require 'net/http'
 require 'json'
 
 unless ARGV.length == 1
-    puts "Enter gihtub username in the command line."
+    puts "Enter github username in the command line."
 end
 url = 'https://api.github.com/users/'+ARGV[0]+'/repos'
 uri = URI(url)
