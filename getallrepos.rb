@@ -1,7 +1,10 @@
 require 'net/http'
 require 'json'
- 
-url = 'https://api.github.com/users/fahdi/repos'
+
+unless ARGV.length == 1
+    puts "Enter github username in the command line."
+end
+url = 'https://api.github.com/users/'+ARGV[0]+'/repos'
 uri = URI(url)
 response = Net::HTTP.get(uri)
 # puts JSON.parse(response)

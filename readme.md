@@ -1,8 +1,8 @@
 # Get all repos from a user
 
-Allows you to get all repos from a github, just change the username is the ruby file and run it 
+Allows you to get all repos from a github, just enter the username while running the command.
 
-```ruby getallrepos.rb```
+```ruby getallrepos.rb %github_username%```
 
 You'd have all their repos in your folder in no time. 
 
