@@ -2,7 +2,7 @@
 
 Allows you to get all repos from a user on github.
 
-#Installation
+# Installation
 
 Download this repo either viua clone or the zip file and make `getallrepos.rb` executable. 
 
