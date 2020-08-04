@@ -9,5 +9,6 @@ else
     url = 'https://api.github.com/users/'+ARGV[0]+'/repos'
     uri = URI(url)
     response = Net::HTTP.get(uri)
-    JSON.load(response).each { |repo| %x[git clone #{repo["git_url"]} ]}
+    Dir.mkdir(ARGV[0]) unless File.exists?(ARGV[0])
+    JSON.load(response).each { |repo| %x[git -C #{ARGV[0]} clone  #{repo["git_url"]} ]}
 end
