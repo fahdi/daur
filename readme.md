@@ -10,7 +10,7 @@ Download this repo either via clone or the zip file and make `getallrepos.rb` ex
 
 Just enter the username while running the command.
 
-``ruby getallrepos.rb %github\*username% %directory_path%`
+``ruby getallrepos.rb %github\*username% %directory_path%``
 
 You'd have all their repos in your `./{username}` or `directory_path` in no time.
 
@@ -19,3 +19,4 @@ You'd have all their repos in your `./{username}` or `directory_path` in no time
 - If you want to add a feature, please add it and open a PR.
 - For any questions or improvements email info@fahdmurtaza.com
 - For reporting a bug, use Issues: https://github.com/fahdi/daur/issues
+
